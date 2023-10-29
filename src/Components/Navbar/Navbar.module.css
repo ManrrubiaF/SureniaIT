@@ -15,8 +15,21 @@
 }
 
 .imageContainer {
+    display: flex;
     width: 100%;
     height: fit-content;
+}
+
+.luna{
+    position: absolute;
+    display: flex;
+    left: 45%;
+    align-self: center;
+    justify-self: center;
+    height: 5rem;
+    width: 7rem;
+    background-color: none;
+
 }
 
 .title{
@@ -26,6 +39,7 @@
 
 .logo {
     margin-top: 1rem;
+    z-index: 9999;
     position: relative;   
     left: 50%;
     height: 5rem;

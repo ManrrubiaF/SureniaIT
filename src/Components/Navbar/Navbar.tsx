@@ -24,6 +24,7 @@ export default function NavBar() {
     return (
         <nav className={`${Styles.navMayor} ${scrolled ? Styles.scrolled : ""}`}>
             <div className={Styles.imageContainer}>
+                <img className={Styles.luna} src='/assets/images/luna.jpeg' alt='moon' />
                 <img className={Styles.logo} src='/assets/images/Brujita.svg' alt='logo' />
             </div>
             <img className={Styles.logoName} src='/assets/images/name.svg' alt='name' />
