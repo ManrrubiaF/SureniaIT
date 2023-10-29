@@ -29,7 +29,7 @@
     position: relative;   
     left: 50%;
     height: 5rem;
-    animation: moveLogo 15s linear;
+    animation: moveLogo 15s ease-in-out ;
 }
 .logoName{
     height: 2rem;
