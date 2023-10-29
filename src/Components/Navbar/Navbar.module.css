@@ -50,7 +50,7 @@
         left: calc(100% - 5rem);
         transform: scaleX(-1);
     }
-    94%{
+    75%{
         left: calc(100%-5rem);
         transform: scaleX(-1);
     }
