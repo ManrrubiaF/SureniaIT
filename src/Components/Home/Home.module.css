@@ -1,0 +1,104 @@
+.divMayor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.containerAll {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 10rem;
+}
+
+.containerAbout{
+    justify-self: center;
+    margin-left: 1rem;    
+    width: 45vw;
+}
+.containerAbout div{
+    padding: 2rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 1);
+    border-radius: 15px 15px 15px 15px;
+}
+
+.containerAbout div:last-child{
+    margin-bottom: 2rem;
+}
+
+.containerAbout h2{
+    text-align: center;
+}
+
+.projectsContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 45vw;
+    margin-left: 1rem;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.oneProject{
+    width: 100%;
+    height: fit-content;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 1);
+    margin-top: 2rem;
+}
+.oneProject a{
+    color: inherit;
+}
+.oneProject:first-child{
+    margin-top: 1rem;
+}
+.oneProject h2{
+    text-align: center;
+}
+
+.oneProject p{
+    padding: 1rem;
+}
+
+.imageContainer {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+  
+.imageContainer img {
+    overflow: hidden;
+    width: 100%;
+    transition: transform 2s;
+    border-radius: 15px 15px 0 0;
+}
+
+  
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+    .divMayor{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100vw !important;
+    }
+    .containerAll{
+        margin-top: 10rem !important;
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .containerAbout{
+        margin-left: 1rem !important;
+        width: 100vw;
+    }
+    .containerAbout div{
+        font-size: 32px;
+    }
+    .projectsContainer{
+        width: 100vw;
+        font-size: 32px;
+    }
+}

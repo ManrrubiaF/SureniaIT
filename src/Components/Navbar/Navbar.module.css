@@ -1,0 +1,67 @@
+.navMayor {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    background-color: black;   
+    padding-bottom: 1rem ; 
+    transition: box-shadow 0.3s;
+    z-index: 9999;
+}
+
+.navMayor.scrolled {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1); 
+}
+
+.imageContainer {
+    width: 100%;
+    height: fit-content;
+}
+
+.title{
+    align-self: center;
+    color: white;
+}
+
+.logo {
+    margin-top: 1rem;
+    position: relative;   
+    left: 50%;
+    height: 5rem;
+    animation: moveLogo 15s linear;
+}
+.logoName{
+    height: 2rem;
+}
+
+
+
+@keyframes moveLogo {
+    0% {
+        left: 0;
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% - 5rem);
+        transform: scaleX(1);
+    }
+    51% {
+        left: calc(100% - 5rem);
+        transform: scaleX(-1);
+    }
+    94%{
+        left: calc(100%-5rem);
+        transform: scaleX(-1);
+    }
+    95%{
+        left: 50%;
+        transform: scaleX(1);
+    }
+    100% {
+        left: 50%;
+        transform: scaleX(1);
+    }
+}
+
+
